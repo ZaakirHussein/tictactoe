@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    background-color: black;
+    color: white;
+}
+
+/* Header Styles */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+    gap: 15px;
+
+}
+
+.title {
+    font-size: 64px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.question {
+    font-size: 40px;
+    font-family: 'Walter Turncoat', cursive;
+}
+.header-buttons {
+    display: flex;
+    font-family: 'Walter Turncoat', cursive;
+    gap: 20px;
+}
+
+.header-buttons #start-btn {
+    background-color:#353839;
+    padding: 0.3em 0.5em;
+    border-radius: 0.2em;
+}
+
+.header-buttons #start-btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.header-buttons #restart-btn {
+    background-color: #353839;
+    padding: 0.3em 0.5em;
+    border-radius: 0.2em;
+}
+
+.header-buttons #restart-btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+/* Tic Tac Toe Container Styles */
+
+.game-container {
+    display: flex;
+    justify-content: center;  
+    padding-top: 30px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    height: 500px;
+    width: 500px;
+    gap: 2px;
+    background:#fff;
+}
+
+.grid-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px ;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.grid-box:hover {
+    background-color: #353839;
+}
+
+/* Score Container Styles */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.user-selection {
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    width: 500px;
+}
+
+.user-selection p {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 18px;
+}
+
+.user-selection .scores {
+    font-size: 30px;
+    padding: 10px 0px
+}
+
+/* Form Styles */ 
+
+.form-container {
+    position: fixed;
+    width: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 20px 40px 60px 40px;
+    border: 1px solid #353839;
+    background-color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    z-index: 8;
+}
+.form-header h2 {
+    background-color: white;
+    color: #353839;
+    font-family:'Walter Turncoat', cursive;
+    font-size: 25px ;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#form-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+#userone-name,
+#usertwo-name {
+    width: 50%;
+    padding-left: 5px;
+}
+
+.popup-form,
+.popup-form label,
+.popup-form #userone-name,
+.popup-form #usertwo-name {
+    font-family:'Walter Turncoat', cursive;
+    background-color: white;
+    color: #353839;
+    font-size: 20px;
+}
+
+.popup-form #playerinput {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    background-color: white;
+    color: #353839;
+}
+
+.popup-form #form-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-form img {
+    background-color: white;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.popup-form #submit-button {
+    height: 20%;
+    width: 30%;
+    background-color: #353839;
+    border: 0.1px solid white;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem
+}
+
+.popup-form #submit-button:hover {
+    background-color: white;
+    color: #353839;
+    border: 1px solid #353839;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.7); 
+}

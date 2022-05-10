@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="tictactoe.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header-container">
+            <h1 class="title">Tic Tac Toe</h1>
+            <h3 class="question">Let's have a friendly old game of Tic Tac Toe!</h3>
+            <div class="header-buttons">
+                <h2 id="start-btn">START NEW ROUND</h2>
+                <h2 id="restart-btn">RESET SCORE</h2>
+            </div>
+        </div>    
+        <div class="game-container">
+            <div class="grid"></div>
+        </div>
+        <div class="wrapper">
+            <div class="user-selection">
+                <p id='display-name1'>User 1 Score (X)</p>
+                <p>Tie</p>
+                <p id='display-name2'>User 2 Score (O)</p>
+                <p class='scores' id="user1-score">0</p>
+                <p class='scores' id="tie-score">0</p>
+                <p class='scores' id="user2-score">0</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Enter each player's name to begin!</h2>
+            </div>
+            <form class="popup-form" id="form-body">
+                <div class="popup-form" id="playerinput">
+                  <label for="userone-name">Player 1's Name (X)</label>
+                  <input type="text" name="userone-name" id="userone-name" placeholder='Enter Name' required>
+                </div>
+                <div class="popup-form" id="playerinput">
+                    <label for="usertwo-name">Player 2's Name (O)</label>
+                    <input type="text" name="usertwo-name" id="usertwo-name" placeholder='Enter Name' required>
+                </div>
+                <div class="popup-form" id="form-bottom">
+                    <img src="images/Tic_tac_toe.png" alt="tictactoe-image">
+                    <input type="submit" value="Start Game" id="submit-button">
+                </div>
+              </form>
+        </div>
+        <div id="overlay"></div>
+    </div>
+</body>
+</html>
